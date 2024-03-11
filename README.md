@@ -1,27 +1,26 @@
-# AngularJuniorTest
+# Test for Angular Junior Web Developer
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.1.
+This is a test that Angular junior developers must fulfill successfully to move to the next round.
+The time limit for the test is 30 minutes.
 
-## Development server
+## Starting point
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+This project contains the product list component that displays the data. 
 
-## Code scaffolding
+You must first build this application on your PC and be able to serve it.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+To build and serve the app for local development simply utilize the `ng serve` command for a dev server. Navigate to `http://localhost:4200/`. 
+The application will automatically reload if you change any of the source files.
 
-## Build
+## Requirements
+- Modify the `product-list` component to show the entire list instead of  only the first item from the list
+- Create a component named `product-filter` that displays two input fields for minimum and maximum price.
+- Implement logic to capture user input from the price range fields.
+- Update the product list component to receive the selected price range from product-filter.
+- Filter the product list based on the selected price range. Only products with prices within the entered range should be displayed.
+- Use Angular's built-in pipe mechanism to create a custom pipe for price formatting (optional).
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+### Bonus points
 
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+- Add visual highlighting to indicate the selected price range.
+- Implement error handling for invalid user input.
