@@ -7,5 +7,11 @@ import { IProduct } from '../model';
   styleUrls: ['./product-list.component.scss']
 })
 export class ProductListComponent {
-  @Input() products: IProduct[] = []
+  @Input() products: IProduct[] = [];
+
+
+  filterProducts(products: IProduct[]) {
+    this.products = products;
+  }
+
 }

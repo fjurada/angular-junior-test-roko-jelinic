@@ -1,0 +1,13 @@
+<form (ngSubmit)="onSubmit()">
+  <div>
+    <label for="max">Max:</label>
+    <input type="number" name="max" id="max" [(ngModel)]="max" placeholder="Input max..." />
+  </div>
+  <div>
+    <label for="min">Min:</label>
+    <input type="number" name="min" id="min" [(ngModel)]="min" placeholder="Input min..." />
+  </div>
+  <input type="submit" value="Submit" />
+  <br />
+  Filter will go from {{ min }} to {{ max }}
+</form>

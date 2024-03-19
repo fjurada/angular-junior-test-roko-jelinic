@@ -1,6 +1,6 @@
-
-<div>
-    <div>Modify me to show all products</div> 
-    <h2>{{ products[0].name }}</h2>
-    <p>Price: {{ products[0].price }}</p>
+<app-product-filter [products] ="products" (onSubmitCheck)="filterProducts($event)">
+</app-product-filter>
+<div *ngFor="let product of products">
+  <h2>{{ product.name }}</h2>
+  <p>Price: {{ product.price }}</p>
 </div>
